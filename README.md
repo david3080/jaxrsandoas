@@ -35,3 +35,17 @@ $ spring init --package-name sonrisa.oas --build=maven -d web -n MyApplication j
 - 「-n MyApplication」: アプリケーション名を指定します。
 - 「jaxrsandoas」:
   プロジェクト名を指定します。この名前のフォルダが作成されます。
+
+## パッケージ「SpringDoc OpenAPI Starter WebMVC UI」の追加
+
+Springのコードにアノテーションを追加してOASドキュメントを生成するMavenのパッケージ「SpringDoc
+OpenAPI Starter WebMVC UI」をpom.xmlに追加します。
+
+```
+<!-- Springdocの追加 -->
+<dependency>
+	<groupId>org.springdoc</groupId>
+	<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+	<version>2.5.0</version>
+</dependency>
+```
