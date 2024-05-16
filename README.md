@@ -2,6 +2,18 @@
 
 本レポジトリではSpringBootとJAX-RSによるRESTAPI開発とSpringdocを使ったOAS生成とオブジェクト指向言語とJSONスキーマの対応を見ていきます。
 
+## 履歴
+
+- 2024/05/15: 初版
+- 2024/05/16: Spring Webを使ったREST
+  API実装とOAS生成。アノテーションには「io.swagger.v3.oas.annotations」を使用。
+
+## TODO
+
+- PetStoreのAPIコードを移植し、生成されるOASが正しく生成されることを確認。
+- SwaggerHubでOASからサーバの雛形を生成し、[Generatio Gapパターン](https://zenn.dev/t_kuroiwa/articles/9676eb99b72cdc)を使って実装が可能なことを示す。
+- Kafkaを使ったマイクロサービスを実装し、AsyncAPIについても同じことができるか確認。この場合もSAGAパターンなどの実装は抽象クラスで用意しておき、AsyncAPIで生成されたテンプレートとうまく組み合わせて実装できるかを確認。
+
 ## なぜSpringBootとJAX-RSを選ぶのか？
 
 Java言語でRESTAPIを開発する場合、JAX-RS単独のライブラリを使うケースとSpringBootMVCだけを使うケースと両方を組み合わせるケースが考えられますが、SpringBootMVCだけだと自由なAPI実装が可能でありRESTAPIのルールに従わせることができません。一方、JAX-RS単独のライブラリを使うケースだとSpringBootの豊富な機能を活用することができないため、それらを組み合わせSpringBootとJAX-RSを組み合わせて実装することを選びました。
