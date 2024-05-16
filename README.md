@@ -10,13 +10,6 @@
 - 2024/05/16: Spring Webを使ったREST
   API実装とOAS生成。アノテーションには「io.swagger.v3.oas.annotations」を使用。
 
-### 参考サイト
-
-- [springdoc-openapi メモ書き](https://ksby.hatenablog.com/entry/2021/03/25/072126)
-- [Javaにおける多重継承問題](https://javarush.com/ja/groups/posts/ja.731.java-)
-- [Java Records in Spring Boot Rest API](https://dev.to/psideris89/java-14-records-in-spring-boot-rest-api-n29)
-- [Spring WebでのAPI実装](https://qiita.com/kanfutrooper/items/b2c77dcc5902eabff3ac)
-
 ### TODO
 
 - Apache CXFでのRESTAPI実装。
@@ -25,6 +18,7 @@
 - Kafkaを使ったマイクロサービスを実装し、AsyncAPIについても同じことができるか確認。この場合もSAGAパターンなどの実装は抽象クラスで用意しておき、AsyncAPIで生成されたテンプレートとうまく組み合わせて実装できるかを確認。
 - JSONスキーマの理解とJSONスキーマからのJavaクラス生成の限界の理解
 - JSONスキーマのバリデーションの理解とSpectralでのバリデーションの理解、それぞれ何ができ、何ができないかの端的な説明
+- Java実装について説明を記載する
 
 ## 解説
 
@@ -87,3 +81,10 @@ MyApplication.javaやXXController.java、モデルクラス（レコードで実
 
 - [JSONスキーマの理解](https://json-schema.org/understanding-json-schema)
 - [JSONスキーマのバリデーションサイト](https://jsonschema.net/)
+
+### 参考サイト
+
+- [springdoc-openapi メモ書き](https://ksby.hatenablog.com/entry/2021/03/25/072126)
+- [Javaにおける多重継承問題](https://javarush.com/ja/groups/posts/ja.731.java-)
+- [Java Records in Spring Boot Rest API](https://dev.to/psideris89/java-14-records-in-spring-boot-rest-api-n29)
+- [Spring WebでのAPI実装](https://qiita.com/kanfutrooper/items/b2c77dcc5902eabff3ac)
