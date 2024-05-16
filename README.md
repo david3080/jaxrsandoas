@@ -77,12 +77,18 @@ OpenAPI Starter WebMVC UI」をpom.xmlに追加します。
 TODO:
 MyApplication.javaやXXController.java、モデルクラス（レコードで実装）やそれらへのアノテーション方法とOASとの関係などを記載する。
 
+## JSONスキーマについて
+
 ### JSONスキーマの学習
 
 - [JSONスキーマの理解](https://json-schema.org/understanding-json-schema)
 - [JSONスキーマのバリデーションサイト](https://jsonschema.net/)
 
-### 参考サイト
+## JavaコードとOAS/JSONスキーマの関係と注意点
+
+TODO: JavaコードとOAS/JSONスキーマの関係と注意点を記載する。
+
+## 参考サイト
 
 - [springdoc-openapi メモ書き](https://ksby.hatenablog.com/entry/2021/03/25/072126)
 - [Javaにおける多重継承問題](https://javarush.com/ja/groups/posts/ja.731.java-)
