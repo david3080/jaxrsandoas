@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "注文イベント",
+    "description": "注文イベントのスキーマ",
+    "required": ["order_id", "total_price", "products" ],
+    "properties": {
+        "order_id": {
+            "description": "注文ID",
+            "type": "string"
+        },
+        "event": {
+            "description": "注文イベント",
+            "enum": ["PLACED", "DELIVERED", "RETURNED"],
+            "type": "string"
+        },
+        "total_price": { 
+            "description": "注文合計金額",
+            "type": "number",
+            "minimum": 0
+        },
+        "products": {
+            "description": "注文商品",
+            "type": "array",
+            "items": {
+                "additionalProperties": true,
+                "required": ["product_id", "price"],
+                "minItems": 1,
+                "properties": {
+                    "product_id": {
+                        "description": "商品ID",
+                        "type": "string"
+                    },
+                    "price": {
+                        "description": "商品価格",
+                        "type": "number",
+                        "minimum": 0
+                    }
+                },
+                "quantity": {
+                    "description": "商品数量",
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}

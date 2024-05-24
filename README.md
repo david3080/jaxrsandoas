@@ -32,11 +32,8 @@ Java言語でRESTAPIを開発する場合、JAX-RS単独のライブラリを使
 ### どのJAX-RSの実装を使うのか？
 
 JAX-RSはJavaEEにおけるRESTAPI開発における標準です。この標準に従った参照実装には様々な実装があります。その実装のうち主要なものには「Glassfish
-Jersey」、「Apache
-CXF」、「RESTEasy」、「Restlet」があり、SpringBootと相性がよい実装としては「Apache
-CXF」であるため、これを使うことにします。
-
-※参考:[Tomcat9上で動くjax-rsのAPIを作る時glassfishのjerseyライブラリを使う以外の方法](https://www.perplexity.ai/search/Tomcat9jaxrsAPI-ojOiLbItRGG6mnXlOsk2GQ)
+Jersey」、「Apache CXF」、「RESTEasy」、「Restlet」があり、Spring
+CLIがサポートするライブラリである「Glassfish Jersey」を使うことにします。
 
 ### OAS3作成には何を使うか？
 
@@ -48,7 +45,7 @@ SpringBootにはSpring
 CLIが提供されており、これを使ってプロジェクトを生成することができます。
 
 ```
-$ spring init --package-name sonrisa.oas --build=maven -d web -n MyApplication jaxrsandoas
+$ spring init --package-name sonrisa.oas --build=maven -d web,jersey -n MyApplication jaxrsandoas
 ```
 
 - 「--package-name」: パッケージ名を指定します。
@@ -94,3 +91,4 @@ TODO: JavaコードとOAS/JSONスキーマの関係と注意点を記載する�
 - [Javaにおける多重継承問題](https://javarush.com/ja/groups/posts/ja.731.java-)
 - [Java Records in Spring Boot Rest API](https://dev.to/psideris89/java-14-records-in-spring-boot-rest-api-n29)
 - [Spring WebでのAPI実装](https://qiita.com/kanfutrooper/items/b2c77dcc5902eabff3ac)
+- [JSON Schema Validator using Java SpringBoot](https://medium.com/@mohommad.belal/json-schema-validator-using-java-springboot-667ed42480d5)
